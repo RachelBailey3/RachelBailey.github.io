@@ -32,17 +32,18 @@
 					</nav>
 
 				<!-- Main -->
-				<div id="main">
-						<nav>
-   							 <ul>
-      								<li><a href="#" onclick="showText('text1')">University of Connecticut</a></li>
-   							 </ul>
-						</nav>
-
-  <div id="textContainer">
-    <div id="text1" style="display:none;">
-      <h2>University of Connecticut</h2>
-      <article>
+				<section class="accordion">
+ 					 <input type="radio" name="collapse" id="handle1" checked="checked">
+  						<h2 class="handle">
+   						 <label for="handle1">
+    						University of Connecticut
+    						</label>
+  						</h2>
+  
+ 				 <div class="content">
+   				 <p> 
+					 <h2>University of Connecticut</h2>
+ 
 						<h3>Fall 2023</h3> 
 							<p> MATH 1071 Calculus for Business and Economics (Primary Instructor) </p>
               					<h3>Summer 2023</h3> 
@@ -82,10 +83,20 @@
 							<p> MATH 1131 Calculus 1 (Teaching Assistant) 
 							</p>
                  
-						</article>
+						</p>  
+  				</div>
+					  <input type="radio" name="collapse" id="handle2">
+  						<h2 class="handle">
+    						<label for="handle2">
+     						TBD 
+    						</label>
+  						</h2>
+				</section>
+
+     
     </div>			
   </div>
-</div>
-  <script src="assets/js/script.js"></script>
+
+
 </body>
 </html>
