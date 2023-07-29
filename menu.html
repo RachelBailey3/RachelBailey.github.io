@@ -57,13 +57,10 @@
 				<!-- Main -->
 				
   <body>
+	  <button type="button" class="collapse" onclick="toggleCollapse('text1')">University of Connecticut</button>
+  	<div class="text" id="text1">
 
-    <button type="button" class="collapse">
-        University of Connecticut
-    </button>
-      
-    <div class="text">
-	    <article>
+ <article>
       <h3>Fall 2023</h3> 
 							<p> MATH 1071 Calculus for Business and Economics (Primary Instructor) </p>
               					<h3>Summer 2023</h3> 
@@ -106,16 +103,31 @@
 						  </p>
 		    </article>
     </div>
-  </br>
-	<button type="button" class="collapse">
-        	Another School
-    	</button>
-	  
-	   <div class="text">
-	      <article> some text</article>
-      </div>
+
+<button type="button" class="collapse" onclick="toggleCollapse('text2')">Button 2</button>
+  <div class="text" id="text2">
+    <article>
+      Text for Button 2
+    </article>
+  </div>
+
+
+		
+
+    <button type="button" class="collapse">
+        University of Connecticut
+    </button>
+      
+    <div class="text">
+	    <p> text </p>
+	   
+  
       
     <script>
+	    function toggleCollapse(contentId) {
+      const content = document.getElementById(contentId);
+      content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    }
         var btn = document.getElementsByClassName("collapse");
           
         btn[0].addEventListener("click", function () {
