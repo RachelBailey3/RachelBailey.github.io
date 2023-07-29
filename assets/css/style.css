@@ -1,17 +1,17 @@
 .collapsible-container {
-  margin: 20px;
-}
+      margin: 20px;
+    }
 
-.collapsible-btn {
-  background-color: #f1f1f1;
-  color: #333;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
+    .collapsible-btn {
+      background-color: #f1f1f1;
+      color: #333;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
 
-.collapsible-content {
-  display: none;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
+    .collapsible-content {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
